@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BigFish Audio — Production, Systems, Solutions. Professional audio for events, productions, businesses, and more.">
+<title>BigFish Audio</title>
+<link rel="icon" href="assets/bigfish-logo-main.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="BigFish Audio home"><img src="assets/bigfish-logo-main.png" alt="BigFish Audio logo"></a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav" id="nav">
+    <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions"><a class="btn btn-blue" href="#quote">Request a Quote</a><a class="btn btn-outline" href="#contact">Contact Us</a></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-brand"><img src="assets/bigfish-logo-main.png" alt="BigFish Audio"></div>
+    <h1>Professional Audio.<br><span>Built to Be Heard.</span></h1>
+    <p class="lead">BigFish Audio provides professional audio solutions for events, productions, businesses, and more.</p>
+    <div class="hero-actions"><a class="btn btn-blue" href="#quote">Request a Quote</a><a class="btn btn-outline" href="#contact">Contact Us</a></div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="section-head"><div><p class="eyebrow">WHAT WE DO</p><h2>Our Services</h2></div><div class="section-intro">From live events to custom audio systems, we deliver solutions that sound great and work reliably.<br><a href="#quote">View all services →</a></div></div>
+  <div class="cards">
+    <article class="card"><div class="card-icon">◉</div><h3>Audio Production</h3><p>Professional audio solutions designed around your project.</p></article>
+    <article class="card"><div class="card-icon">◖</div><h3>Live Sound</h3><p>Reliable sound systems for events, performances, and gatherings.</p></article>
+    <article class="card"><div class="card-icon">☷</div><h3>Audio Systems</h3><p>Audio equipment, setup, and system solutions.</p></article>
+    <article class="card"><div class="card-icon">▣</div><h3>Event Audio</h3><p>Helping events sound professional from setup to teardown.</p></article>
+  </div>
+</section>
+
+<section class="about split" id="about">
+  <div class="about-image"><img src="assets/about.jpg" alt="BigFish Audio equipment case"></div>
+  <div class="about-copy"><p class="eyebrow">ABOUT US</p><h2>Built Around Great Sound</h2><p>BigFish Audio is focused on providing quality audio solutions with a commitment to reliability, professionalism, and great sound. Whether it’s an event, production, or custom audio project, we work to create solutions that fit the needs of each customer.</p><a class="btn btn-white" href="#contact">Learn More About BigFish Audio</a></div>
+</section>
+
+<section class="section work" id="work">
+  <div class="work-copy"><p class="eyebrow">OUR WORK</p><h2>See BigFish Audio in Action</h2><p>From live events to installations, check out some of the projects we’ve had the opportunity to work on.</p><a class="btn btn-outline" href="#contact">View Our Work →</a></div>
+  <div class="work-grid"><div class="work-tile t1"></div><div class="work-tile t2"></div><div class="work-tile t3"></div><div class="work-tile t4"></div></div>
+</section>
+
+<section class="section why">
+  <p class="eyebrow">WHY BIGFISH AUDIO</p><h2>Why Choose BigFish?</h2>
+  <div class="why-grid"><div><strong>Quality</strong><p>Professional equipment and attention to detail.</p></div><div><strong>Reliability</strong><p>Dependable service from setup through completion.</p></div><div><strong>Experience</strong><p>Solutions built around the needs of each project.</p></div><div><strong>Personal Service</strong><p>Work directly with a team that cares about the result.</p></div></div>
+</section>
+
+<section class="quote-section section" id="quote-form">
+  <div><p class="eyebrow">REQUEST A QUOTE</p><h2>Tell Us About Your Project</h2><p>Give us the details below and we’ll have the information needed to start the conversation.</p></div>
+  <form class="quote-form" onsubmit="return handleQuote(event)">
+    <label>Name<input required name="name" autocomplete="name"></label><label>Email<input required type="email" name="email" autocomplete="email"></label>
+    <label>Phone<input name="phone" autocomplete="tel"></label><label>Event / Project Date<input type="date" name="date"></label>
+    <label class="full">Service Needed<select name="service"><option>Audio Production</option><option>Live Sound</option><option>Audio Systems</option><option>Event Audio</option><option>Other</option></select></label>
+    <label class="full">Project Details<textarea required name="details" rows="5" placeholder="Tell us about your event or project..."></textarea></label>
+    <button class="btn btn-blue full" type="submit">Send Quote Request</button>
+    <p class="form-note">Before launch, connect this form to the company email/form service you want to use.</p>
+  </form>
+</section>
+
+<section class="contact" id="contact"><div><p class="eyebrow">CONTACT BIGFISH AUDIO</p><h2>Get in Touch.</h2><p>Have a question or need an audio solution? Get in touch with BigFish Audio.</p></div><div class="contact-actions"><a class="btn btn-blue" href="#quote-form">Request a Quote</a><a class="btn btn-outline" href="tel:+17656064075">Call 765-606-4075</a></div></section>
+</main>
+
+<footer class="footer"><div class="footer-brand"><img src="assets/bigfish-logo-main.png" alt="BigFish Audio"></div><div class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#contact">Contact</a></div><div class="copyright">© <span id="year"></span> BigFish Audio. All Rights Reserved.</div></footer>
+<script src="script.js"></script>
+</body></html>
